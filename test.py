@@ -32,3 +32,8 @@ for row in data:
 for row in dataV2:
     del row[2]
     print row
+
+dataV2.insert(0, ['State', 'Election Type', 'VEP Ballots Counted', 'VEP', 'VAP', 'Democrat', 'Republican', 'Minor', 'Total Ballots'])
+with open("data.csv", "wb") as f:
+    writer = csv.writer(f)
+    writer.writerows(dataV2)
