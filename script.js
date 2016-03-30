@@ -59,7 +59,7 @@ var svgContainer = d3.select("svg");
 svgContainer.append("circle")
 					.data(votes)
 					.enter()
-					.attr("cx", Math.random(1000))
+					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("fill", "green")
 					.attr("r", function(d){
@@ -69,7 +69,7 @@ svgContainer.append("circle")
 svgContainer.append("circle")
 					.data(votes)
 					.enter()
-					.attr("cx", Math.random(1000))
+					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("fill", "purple")
 					.attr("r", function(d){
@@ -82,7 +82,7 @@ var color2;
 svgContainer.append("circle")
 					.data(votes)
 					.enter()
-					.attr("cx", Math.random(1000))
+					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("r", function(d){
 						if (d.democrat>d.republican){
@@ -99,7 +99,7 @@ svgContainer.append("circle")
 svgContainer.append("circle")
 					.data(votes)
 					.enter()
-					.attr("cx", Math.random(1000))
+					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("r", function(d){
 						if (d.democrat<d.republican){
