@@ -55,10 +55,10 @@ var votes = [
 	     ];
 
 var svgContainer = d3.select("svg");
-
-var stateCircle = svgContainer.append("circle")
 					.data(votes)
-					.enter()
+					.enter();
+					
+var stateCircle = svgContainer.append("circle")
 					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("fill", "green")
@@ -67,8 +67,6 @@ var stateCircle = svgContainer.append("circle")
 					});
 					
 var turnoutCircle = svgContainer.append("circle")
-					.data(votes)
-					.enter()
 					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("fill", "purple")
@@ -80,8 +78,6 @@ var color1;
 var color2;
 
 var party1Circle = svgContainer.append("circle")
-					.data(votes)
-					.enter()
 					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("r", function(d){
@@ -97,8 +93,6 @@ var party1Circle = svgContainer.append("circle")
 					.attr("fill", color1);
 					
 var party2Circle = svgContainer.append("circle")
-					.data(votes)
-					.enter()
 					.attr("cx", screen.width/2)
 					.attr("cy", 250)
 					.attr("r", function(d){
