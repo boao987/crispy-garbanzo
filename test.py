@@ -35,5 +35,5 @@ for row in dataV2:
 
 dataV2.insert(0, ['State', 'Election Type', 'VEP Ballots Counted', 'VEP', 'VAP', 'Democrat', 'Republican', 'Minor', 'Total Ballots'])
 with open("data.csv", "wb") as f:
-    writer = csv.writer(f)
+    writer = csv.writer(f, quoting=csv.QUOTE_NONE, escapechar=" ")
     writer.writerows(dataV2)
