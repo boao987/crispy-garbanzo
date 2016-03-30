@@ -1,6 +1,6 @@
 //oof
 
-d3.csv("data.csv", function(data) {
+d3.csv("data/data.csv", function(data) {
 	data.forEach(function(d) {
 		d.VEP = +d.VEP;
 		console.log(d.VEP);
