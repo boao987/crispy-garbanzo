@@ -5,18 +5,37 @@
             Voter Turnout for Primaries and Caucuses until 3/30/16
         </title>
         <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+        
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <style>
+          .axis text {
+            font-family: 'Poiret One', cursive;
+            font-size: 20pt;
+          }
+          .axis .label {
+            font-size: 20pt;
+          }
+          .axis path, .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+          }
+          .y.axis path, .y.axis line {
+            stroke: none;
+          }
+        </style>
+        
     </head>
     
     <body>
         <center>
             <h1> Primary Election Results </h1>
             <div id="wrapper"></div>
-            <button>Primaries</button>
-            <button>Caucuses</button>
-            
-            <p> The percentages for voter turnout for the primary elections that have taken place are displayed below, comparatively. </p>
+            <button onclick="totalR()">Total Ballots</button>
+            <button onclick="democratR()">Democrat</button>
+            <button onclick="republicanR()">Republican</button>
             
         </center>
-        <script type="text/javascript" src="script2.js"></script>
+        <script type="text/javascript" src="script3.js"></script>
     </body>
 </html>

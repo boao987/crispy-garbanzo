@@ -7,7 +7,8 @@ var colors = ['#0000b4','#0082ca','#0094ff','#0d4bcf','#0066AE','#074285','#0018
 var voterData;
 
 var States;
-
+var Numbers;
+var colors2;
 d3.csv("data/data.csv", function(data) {
 	voterData = data.map(function(d){
 		console.log(d["State"]);
@@ -22,6 +23,12 @@ d3.csv("data/data.csv", function(data) {
 		+d["Total_Ballots"]];
 	});
 });
+
+for(var i = 0;i++;i<voterData.length){
+	States.push(voterData[i][0]);
+	colors2.push("#0000b4");
+	Numbers.push(voterData[i][8]);
+}
 
 var grid = d3.range(25).map(function(i){
 	return {'x1':0,'y1':0,'x2':0,'y2':480};
