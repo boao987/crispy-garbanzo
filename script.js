@@ -74,17 +74,30 @@ var bars = svg.selectAll("rect")
    .attr("width", 20)
    .attr("height", 1);
 
+bars.append("text")
+	.attr("x", function(d, i) {
+    return i * (w / votes.length);
+})
+	.attr("y", function(d) {
+    return h - (d.total/8000);  //Height minus data value
+})
+	.text(
+		function(d){
+			return d.state;
+		});
+
 bars.transition()
   .duration(3000)
   .delay(100)
   
   .attr("y", function(d) {
-    return h - (d.VAP/40000);  //Height minus data value
+    return h - (d.total/8000);  //Height minus data value
 })
    .attr("height", function(d) {
-    return d.VAP/40000;
-})
-	     
+    return d.total/8000;
+});
+
+
 // 	     var total = [];
 // 	     for(var i=0; i<votes.length; i++){
 // 	     	total[i]=votes[i].total;
@@ -150,9 +163,9 @@ bars.transition()
 // 					})
 // 					.attr("fill", color2);
 					
-// var text = svgContainer.append("text")
-// 			.text(
-// 				function(d){
-// 					return d.state + " Turnout Percentage: " + d.VEPbc +"%";
-// 				}
-// 			);
+var text = svgContainer.append("text")
+			.text(
+				function(d){
+					return d.state + " Turnout Percentage: " + d.VEPbc +"%";
+				}
+			);
