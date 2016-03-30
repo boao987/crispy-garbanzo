@@ -1,0 +1,63 @@
+,,,,Turnout Rate,Denominators,,Vote in Party Contest,,,,,
+Date,State,Election Type,Party,VEP Total Ballots Counted,Voting-Eligible Population (VEP),Voting-Age Population (VAP),Democrat,Republican,Minor,Total Ballots Counted,Notes,
+2/1/2016,Iowa,Caucus,D&R,15.7%,"2,286,197","2,403,229","171,109","186,874",,"357,983",,
+2/9/2016,New Hampshire,Primary,D&R,52.4%,"1,035,734","1,070,657","254,776","287,683",,"542,459",,
+2/20/2016,Nevada,Caucus,D,,"1,936,072","2,248,402","84,000",,,,,
+,South Carolina,Primary,R,,"3,663,583","3,837,705",,"745,405",,,,
+2/23/2016,Nevada,Caucus,R,8.2%,"1,936,072","2,248,402",,"75,216",,"159,216",,
+2/27/2016,South Carolina,Primary,D,30.5%,"3,663,583","3,837,705","373,063",,,"1,118,468",http://www.enr-scvotes.org/SC/59277/160652/en/summary.html,
+3/1/2016,Alabama,Primary,D&R,34.8%,"3,602,334","3,764,601","397,890","856,123",,"1,254,013",http://www.alabamavotes.gov/electionnight/statewideResultsByContest.aspx?ecode=3000100,"Not certified results, still provisional ballots to be counted"
+,Alaska,Caucus,R,,"520,731","553,484",,"21,930",,,,
+,Arkansas,Primary,D&R,29.6%,"2,137,115","2,281,940","221,020","410,920",,"631,940",http://results.enr.clarityelections.com/AR/58350/162437/Web01/en/summary.html,
+,Colorado,Caucus,D&R,,"3,928,790","4,259,519","123,508",,,,http://www.coloradocaucus.com/,
+,Georgia,Primary,D&R,29.9%,"6,900,387","7,781,773","765,366","1,295,963",,"2,061,329",http://results.enr.clarityelections.com/GA/58980/162407/en/summary.html,
+,Massachusetts,Primary,D&R,37.4%,"4,966,742","5,442,265","1,220,296","637,703","1,681","1,859,680",http://www.sec.state.ma.us/ele/,
+,Minnesota,Caucus,D&R,8.5%,"3,967,061","4,225,114","215,000 (est.)","122,000 (est.)",,"337,000 (est.)",,Estimated from AP percent precincts reporting
+,Oklahoma,Primary,D&R,28.6%,"2,781,841","2,966,460","335,554","459,542",,"795,096",https://www.ok.gov/elections/support/ok_results_seb.html,"Not certified results, still provisional ballots to be counted"
+,Tennessee,Primary,D&R,25.2%,"4,874,592","5,134,596","371,321","854,792",,"1,226,113",http://elections.tn.gov/results.php,"Not certified results, still provisional ballots to be counted"
+,Texas,Primary,D&R,24.7%,"17,299,279","20,534,676","1,430,000 (est.)","2,836,000 (est.)",,"4,266,000 (est.)",https://enrpages.sos.state.tx.us/,"Estimated from AP percent precincts reporting. Not certified results, TX estimates 11,800 Rep primary and 11,570 Dem primary provisional ballots to be counted"
+,Vermont,Primary,D&R,39.8%,"495,563","506,881","135,256","61,756",,"197,012",http://vtelectionresults.sec.state.vt.us/Index.html#/,
+,Virginia,Primary,D&R,30.1%,"6,022,089","6,549,502","785,041","1,025,425",,"1,810,466",http://elections.virginia.gov/resultsreports/election-results/2016-election-results/index.html,
+,Wyoming (canceled for March 12 county conventions),Caucus,R,,"428,300","448,133",,,,,,
+3/5/2016,Kansas,Caucus,D&R,5.5%,"2,062,778","2,199,237","40,000","73,116",,"113,116",,
+,Kentucky,Caucus,R,,"3,263,219","3,421,813",,"229,667",,,,AP results
+,Louisiana,Primary,D&R,18.2%,"3,373,552","3,569,063","311,776","301,241",,"613,017",https://voterportal.sos.la.gov/Graphical,
+,Maine,Caucus,R,,"1,054,309","1,074,172",,"18,650",,,,
+,Nebraska,Caucus,D,,"1,348,302","1,433,159","33,460",,,,,Still one preinct shy according to AP. We may never know the true number
+3/6/2016,Maine,Caucus,D,6.1%,"1,054,309","1,074,172","46,000",,,"64,650",,
+3/8/2016,Hawaii,Caucus,R,,"1,025,208","1,127,205",,"13,377",,,,AP results
+,Idaho,Primary,R,,"1,149,007","1,234,566",,"222,166",484,,http://www.sos.idaho.gov/elect/results/2016/PresidentialPrimary/ENR/statewide_total.html,"Not certified results, still provisional ballots to be counted"
+,Michigan,Primary,D&R,33.9%,"7,419,694","7,734,729","1,193,169","1,322,742",,"2,515,911",http://miboecfr.nictusa.com/election/results/2016PPR_CENR.html,"Not certified results, still some votes outstanding, provisional ballots to be counted"
+,Mississippi,Primary,D&R,28.6%,"2,181,159","2,267,268","220,560","403,944",,"624,504",http://www.sos.ms.gov/Elections-Voting/Pages/Election-Results-By-Year.aspx,"Not certified results, still some votes outstanding, no write-ins, provisional ballots to be counted"
+3/12/2016,District of Columbia,Convention,R,,"509,305","561,143",,"2,839",,,,
+3/15/2016,Florida,Primary,D&R,28.1%,"14,445,578","16,383,763","1,701,707","2,352,549",,"4,054,256",http://enight.elections.myflorida.com/FederalOffices/Presidential/,"Not certified results, still some votes outstanding, provisional ballots to be counted"
+,Illinois,Primary,D&R,36.9%,"9,015,796","9,907,466","1,948,877","1,379,751",,"3,328,628",,"AP results, still some votes outstanding, not certified"
+,Missouri,Primary,D&R,34.6%,"4,518,767","4,706,349","626,077","934,957","2,894","1,563,928",http://enr.sos.mo.gov/EnrNet/,"Not certified results, still some votes outstanding, provisional ballots to be counted"
+,North Carolina,Primary,D&R,31.2%,"7,266,734","7,816,113","1,129,767","1,139,282",,"2,269,049",http://er.ncsbe.gov/?election_dt=03/15/2016&county_id=0&office=FED&contest=0,"Not certified results, still some votes outstanding, provisional ballots to be counted"
+,Ohio,Primary,D&R,35.9%,"8,738,019","9,004,337","1,194,637","1,945,606",,"3,140,243",https://vote.ohio.gov/,"Not certified results, still some votes outstanding, provisional ballots to be counted"
+3/22/2016,Arizona,Primary,D&R,20.2%,"4,659,373","5,268,830","409,013","530,749",749,"940,511",http://apps.azsos.gov/election/2016/PPE/Results/PPE2016Results.htm#,"Not certified results, still some votes outstanding, provisional ballots to be counted"
+,Idaho,Caucus,D,21.4%,"1,149,007","1,234,566","23,884",,,"246,050",,
+,Utah,Caucus,D&R,13.0%,"1,963,474","2,113,180","77,344","177,204",,"254,548",http://interactives.ap.org/2016/primary-election-results/?STATE=UT&date=0322,Still votes to be counted
+3/26/2016,Alaska,Caucus,D,6.2%,"520,731","553,484","10,600",,,"32,530",http://www.adn.com/article/20160326/sanders-dominates-packed-alaska-democratic-caucuses,
+,Hawaii,Caucus,D,4.6%,"1,025,208","1,127,205","33,716",,,"47,093",,AP results
+,Washington,Caucus,D,,"5,080,485","5,624,976","230,000",,,,https://twitter.com/jamalraad/status/713964220249812992,"I hate caucuses, this is all I've got for turnout, a tweet from the Washington Democratic Party's communications director"
+4/5/2016,Wisconsin,Primary,D&R,,"4,282,271","4,491,213",,,,,,"
+"
+4/9/2016,Wyoming,Caucus,D,,"428,411","448,249",,,,,,
+4/19/2016,New York,Primary,D&R,,"13,638,797","15,635,714",,,,,,
+4/26/2016,Connecticut,Primary,D&R,,"2,579,776","2,831,012",,,,,,
+,Delaware,Primary,D&R,,"695,642","749,184",,,,,,
+,Maryland,Primary,D&R,,"4,190,917","4,682,409",,,,,,
+,Pennsylvania,Primary,D&R,,"9,721,843","10,131,664",,,,,,
+,Rhode Island,Primary,D&R,,"780,998","847,454",,,,,,
+5/3/2016,Indiana,Primary,D&R,,"4,855,984","5,061,304",,,,,,
+5/10/2016,Nebraska,Primary,R,,"1,349,169","1,434,986",,,,,,
+,West Virginia,Primary,D&R,,"1,434,982","1,459,826",,,,,,
+5/17/2016,Kentucky,Primary,D,,"3,265,260","3,423,910",,,,,,
+,Oregon,Primary,D&R,,"2,980,345","3,211,041",,,,,,
+6/7/2016,California,Primary,D&R,,"25,126,973","30,367,243",,,,,,
+,Montana,Primary,D&R,,"798,787","813,839",,,,,,
+,New Jersey,Primary,D&R,,"6,060,729","6,989,532",,,,,,
+,New Mexico,Primary,D&R,,"1,455,013","1,592,398",,,,,,
+,South Dakota,Primary,D&R,,"634,281","651,157",,,,,,
+6/14/2016,District of Columbia,Primary,D,,"510,895","563,776",,,,,,
