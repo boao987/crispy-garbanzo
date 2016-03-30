@@ -1,4 +1,4 @@
-State,Election  Type,VEP  Ballots  Counted,VEP,VAP,Democrat,Republican,Minor,Total  Ballots
+State,Election_Type,VEP_Ballots_Counted,VEP,VAP,Democrat,Republican,Minor,Total_Ballots
 Iowa,Caucus,15.7%,2286197,2403229,171109,186874,,357983
 New  Hampshire,Primary,52.4%,1035734,1070657,254776,287683,,542459
 Nevada,Caucus,8.2%,1936072,2248402,84000,75216,,159216
