@@ -54,13 +54,14 @@ var votes = [
 	     {state:"Hawaii",type:"Caucus",VEPbc:4.6%,VEP:1025208,VAP:1127205,democrat:33716,republican:13377,minor:0,total:47093}
 	     ];
 
-var svgContainer = d3.select("svg")
+var svgContainer = d3.select("svg");
 
 svgContainer.append("circle")
 					.data(votes)
 					.enter()
 					.attr("cx", Math.random(1000))
 					.attr("cy", 250)
+					.attr("fill", "green")
 					.attr("r", function(d){
 						return d.VAP/10000;
 					});
@@ -70,10 +71,13 @@ svgContainer.append("circle")
 					.enter()
 					.attr("cx", Math.random(1000))
 					.attr("cy", 250)
+					.attr("fill", "purple")
 					.attr("r", function(d){
 						return d.total/10000;
 					});
-					
+
+var color1;
+var color2;
 svgContainer.append("circle")
 					.data(votes)
 					.enter()
@@ -81,13 +85,16 @@ svgContainer.append("circle")
 					.attr("cy", 250)
 					.attr("r", function(d){
 						if (d.democrat>d.republican){
+							color1 = "blue";
+							color2 = "red";
 							return d.demmocrat/10000;
 						}
 						else{
 							return d.republican;
 						}
 							
-					});
+					})
+					.attr("fill", color1);
 					
 svgContainer.append("circle")
 					.data(votes)
@@ -101,7 +108,8 @@ svgContainer.append("circle")
 						else{
 							return d.republican;
 						}
-					});
+					})
+					.attr("fill", color2);
 					
 svgContainer.append("p")
 			.text(
