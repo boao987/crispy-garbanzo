@@ -55,11 +55,57 @@ var votes = [
 	     ];
 
 var svgContainer = d3.select("svg")
-					.append("circle")
+
+svgContainer.append("circle")
 					.data(votes)
 					.enter()
 					.attr("cx", Math.random(1000))
 					.attr("cy", 250)
 					.attr("r", function(d){
-						return d[3];
+						return d.VAP/10000;
 					});
+					
+svgContainer.append("circle")
+					.data(votes)
+					.enter()
+					.attr("cx", Math.random(1000))
+					.attr("cy", 250)
+					.attr("r", function(d){
+						return d.total/10000;
+					});
+					
+svgContainer.append("circle")
+					.data(votes)
+					.enter()
+					.attr("cx", Math.random(1000))
+					.attr("cy", 250)
+					.attr("r", function(d){
+						if (d.democrat>d.republican){
+							return d.demmocrat/10000;
+						}
+						else{
+							return d.republican;
+						}
+							
+					});
+					
+svgContainer.append("circle")
+					.data(votes)
+					.enter()
+					.attr("cx", Math.random(1000))
+					.attr("cy", 250)
+					.attr("r", function(d){
+						if (d.democrat<d.republican){
+							return d.demmocrat/10000;
+						}
+						else{
+							return d.republican;
+						}
+					});
+					
+svgContainer.append("p")
+			.text(
+				function(d){
+					return d.state + " Turnout Percentage:" + d.VEPbc;
+				}
+			);
