@@ -31,6 +31,10 @@ for row in data:
 
 for row in dataV2:
     del row[2]
+    #3, 4, 5, 6, 7, 8
+    for i in range (6):
+        row[i+3] = row[i+3].replace(",", "")
+        row[i+3] = row[i+3].replace(" (est.)", "")
     print row
 
 dataV2.insert(0, ['State', 'Election Type', 'VEP Ballots Counted', 'VEP', 'VAP', 'Democrat', 'Republican', 'Minor', 'Total Ballots'])
