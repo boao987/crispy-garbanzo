@@ -19,3 +19,13 @@ d3.csv("data/data.csv", function(data) {
 	    });
 	//	console.log(data[0]);
     });
+
+var svgContainer = d3.select("svg")
+					.append("circle")
+					.data(votes)
+					.enter()
+					.attr("cx", Math.random(1000))
+					.attr("cy", 250)
+					.attr("r", function(d){
+						return d[3];
+					});
