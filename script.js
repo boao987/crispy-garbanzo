@@ -78,6 +78,7 @@ svgContainer.append("circle")
 
 var color1;
 var color2;
+
 svgContainer.append("circle")
 					.data(votes)
 					.enter()
@@ -92,7 +93,6 @@ svgContainer.append("circle")
 						else{
 							return d.republican;
 						}
-							
 					})
 					.attr("fill", color1);
 					
