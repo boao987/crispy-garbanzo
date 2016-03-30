@@ -75,7 +75,7 @@ var bars = svg.selectAll("rect")
    .attr("height", 1);
 
 bars.transition()
-  .duration(1000)
+  .duration(3000)
   .delay(100)
   
   .attr("y", function(d) {
