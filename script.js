@@ -56,7 +56,7 @@ var votes = [
 
 var svgContainer = d3.select("svg");
 
-svgContainer.append("circle")
+var stateCircle = svgContainer.append("circle")
 					.data(votes)
 					.enter()
 					.attr("cx", screen.width/2)
@@ -66,7 +66,7 @@ svgContainer.append("circle")
 						return d.VAP/10000;
 					});
 					
-svgContainer.append("circle")
+var turnoutCircle = svgContainer.append("circle")
 					.data(votes)
 					.enter()
 					.attr("cx", screen.width/2)
@@ -79,7 +79,7 @@ svgContainer.append("circle")
 var color1;
 var color2;
 
-svgContainer.append("circle")
+var party1Circle = svgContainer.append("circle")
 					.data(votes)
 					.enter()
 					.attr("cx", screen.width/2)
@@ -96,7 +96,7 @@ svgContainer.append("circle")
 					})
 					.attr("fill", color1);
 					
-svgContainer.append("circle")
+var party2Circle = svgContainer.append("circle")
 					.data(votes)
 					.enter()
 					.attr("cx", screen.width/2)
@@ -111,7 +111,7 @@ svgContainer.append("circle")
 					})
 					.attr("fill", color2);
 					
-svgContainer.append("p")
+var text = svgContainer.append("p")
 			.text(
 				function(d){
 					return d.state + " Turnout Percentage:" + d.VEPbc;
