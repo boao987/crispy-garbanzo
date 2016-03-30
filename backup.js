@@ -53,3 +53,21 @@ var votes = [
 	     {state:"Alaska",type:"Caucus",VEPbc:6.2%,VEP:520731,VAP:553484,democrat:10600,republican:21930,minor:0,total:32530},
 	     {state:"Hawaii",type:"Caucus",VEPbc:4.6%,VEP:1025208,VAP:1127205,democrat:33716,republican:13377,minor:0,total:47093}
 	     ];
+
+function compareNumbers(a, b) {
+    return a - b;
+};
+
+function get_VAPs(arr) {//arr is the array of objects
+    var ret = [];
+    for (i = 0; i <arr.length; i++) {
+	ret.push(arr[i].VAP);
+    }
+    return ret;
+};
+
+function sorter(arr) {//arr is an array of numbers
+    arr.sortfunction(a, b) {
+	return a - b;
+    });
+};
