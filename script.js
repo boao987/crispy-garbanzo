@@ -53,61 +53,106 @@ var votes = [
 	     {state:"Alaska",type:"Caucus",VEPbc:6.2,VEP:520731,VAP:553484,democrat:10600,republican:21930,minor:0,total:32530},
 	     {state:"Hawaii",type:"Caucus",VEPbc:4.6,VEP:1025208,VAP:1127205,democrat:33716,republican:13377,minor:0,total:47093}
 	     ];
+	     
+var w = 700;
+var h = 700;
+//Create SVG element
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
 
-var svgContainer = d3.select("svg");
-					.data(votes)
-					.enter();
-					
-var stateCircle = svgContainer.append("circle")
-					.attr("cx", screen.width/2)
-					.attr("cy", 250)
-					.attr("fill", "green")
-					.attr("r", function(d){
-						return d.VAP/10000;
-					});
-					
-var turnoutCircle = svgContainer.append("circle")
-					.attr("cx", screen.width/2)
-					.attr("cy", 250)
-					.attr("fill", "purple")
-					.attr("r", function(d){
-						return d.total/10000;
-					});
+var bars = svg.selectAll("rect")
+   .data(votes)
+   .enter()
+   .append("rect")
+   .attr("fill", "teal")
+   .attr("x", function(d, i) {
+    return i * (w / votes.length);
+})
+   .attr("y", h - 1)
+   .attr("width", 20)
+   .attr("height", 1);
 
-var color1;
-var color2;
+bars.transition()
+  .duration(1000)
+  .delay(100)
+  
+  .attr("y", function(d) {
+    return h - (d.VAP/40000);  //Height minus data value
+})
+   .attr("height", function(d) {
+    return d.VAP/40000;
+})
+	     
+// 	     var total = [];
+// 	     for(var i=0; i<votes.length; i++){
+// 	     	total[i]=votes[i].total;
+// 	     }
 
-var party1Circle = svgContainer.append("circle")
-					.attr("cx", screen.width/2)
-					.attr("cy", 250)
-					.attr("r", function(d){
-						if (d.democrat>d.republican){
-							color1 = "blue";
-							color2 = "red";
-							return d.demmocrat/10000;
-						}
-						else{
-							return d.republican;
-						}
-					})
-					.attr("fill", color1);
+// var svgContainer = d3.select("body")
+// 					.append("svg")
+// 					.attr("width", screen.width)
+// 					.attr("height", 2100);
 					
-var party2Circle = svgContainer.append("circle")
-					.attr("cx", screen.width/2)
-					.attr("cy", 250)
-					.attr("r", function(d){
-						if (d.democrat<d.republican){
-							return d.demmocrat/10000;
-						}
-						else{
-							return d.republican;
-						}
-					})
-					.attr("fill", color2);
+// var stateCircle = svgContainer.selectAll("circle")
+// 					.data(votes)
+// 					.enter()
+// 					.append("circle")
+// 					.attr("cx", 250)
+// 					.attr("cy", function(d, i) {
+//     					return 15 + i * ((70));
+// 					})
+// 					.attr("fill", "green")
+// 					.attr("r", function(d){
+// 						return d.VAP/400000;
+// 					});
 					
-var text = svgContainer.append("p")
-			.text(
-				function(d){
-					return d.state + " Turnout Percentage:" + d.VEPbc;
-				}
-			);
+// var turnoutCircle = svgContainer
+// 					.data(total)
+// 					.enter()
+// 					.append("circle")
+// 					.attr("cx", 250)
+// 					.attr("cy", 250)
+// 					.attr("fill", "purple")
+// 					.attr("r", function(d){
+// 						return d.total/10000;
+// 					});
+
+// var color1;
+// var color2;
+
+// var party1Circle = svgContainer.append("circle")
+// 					.attr("cx", screen.width/2)
+// 					.attr("cy", 250)
+// 					.attr("r", function(d){
+// 						if (d.democrat>d.republican){
+// 							color1 = "blue";
+// 							color2 = "red";
+// 							return d.demmocrat/10000;
+// 						}
+// 						else{
+// 							return d.republican;
+// 						}
+// 					})
+// 					.attr("fill", color1);
+					
+// var party2Circle = svgContainer.append("circle")
+// 					.attr("cx", screen.width/2)
+// 					.attr("cy", 250)
+// 					.attr("r", function(d){
+// 						if (d.democrat<d.republican){
+// 							return d.demmocrat/10000;
+// 						}
+// 						else{
+// 							return d.republican;
+// 						}
+// 					})
+// 					.attr("fill", color2);
+					
+// var text = svgContainer.append("text")
+// 			.text(
+// 				function(d){
+// 					return d.state + " Turnout Percentage: " + d.VEPbc +"%";
+// 				}
+// 			);
